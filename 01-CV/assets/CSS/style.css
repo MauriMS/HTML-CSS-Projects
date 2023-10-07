@@ -1,3 +1,89 @@
+/*Definicion de colores que pueden variar*/
+:root{
+    --color--principal:#FFFFFF;
+    --color--secundario:#04B4E0;
+    --color--iconos:#B5B6B7;
+    --color--titulo:#222222;
+    --color--subtitulo:#888;
+    --color--texto:#555555;
+    --color--fondo:#F2F7F9;
+    --color--transparente: transparent;
+}
+/*Estilos Generales*/
+html{
+    font-size: 10px;
+}
 body{
-    font-family: "Poppins";
+    width: 100%;
+    height: auto;
+    font-family: "Poppins", sans-serif, Helvetica;
+    font-size: 1.5rem;
+    background-color: var(--color--fondo);
+    color: var(--color--texto);
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--color--titulo);
+}
+
+/*Imagen de fondo*/ 
+body{
+    background-image: url(/assets/img/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50px -126px;
+
+}
+
+/*Estructura Principal*/
+.layout{
+    display: grid;
+    grid-template-areas: "aside content";
+    grid-template-columns: 30% 70%;
+    position: relative;
+    min-width: 1290px;
+    width: 75%;
+    height: 80vh;
+    min-height: 80vh;
+    margin: 10vh auto;
+    border-radius: 4rem ;
+    box-shadow: 0 0 100px -5px rgba(0, 0, 0 , 0.25);
+}
+
+/*Barra del usuario*/
+.layout__aside{
+    grid-area: aside;
+    border-radius: 4rem 0 0 4rem;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.aside__userInfo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    min-height: 100%;
+    min-width: 30rem;
+    background-color: var(--color--secundario);
+    color: var(--color--principal);
+}
+
+.userInfo__containerImg{
+    position: relative;
+    display: inline-block;
+    width: 18rem;
+    height: 18rem;
+    margin-top: 7rem;
+    background-color: var(--color--principal);
+    border: 3px solid var(--color--principal);
+    border-radius: 20rem;
+    overflow: hidden;
+}
+.userInfo__imgen{
+    width: 100%;   
+}
+
+/*Contenido principal*/
+.layout__content{
+    grid-area: content;
 }

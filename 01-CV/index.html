@@ -4,13 +4,14 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Portafolio Web</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='/assets/CSS/reset.css'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='/assets/CSS/style.css'>
     <script src='main.js'></script>
     <link rel="stylesheet" href="/assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
     <link rel="stylesheet" href="/assets/fonts/poppins/poppins.css">
 </head>
-<>
+<body>
     <!--Layout Principal-->
     <div class="layout">
         <!--Barra Lateral (Info del usuario)-->
@@ -20,10 +21,10 @@
                 <!--Informacion general-->
                 <div class="userInfo__general">
                     <div class="userInfo__containerImg">
-                        <img src="/assets/img/Perfil.jp" alt="Foto-Perfil" style="width: 250px;" class="userInfo__imgen"></img>
-                        <h2 class="userInfo__name">Mauricio Schefer</h2>
-                        <h4 class="userInfo--trabajo">Frotend Developer</h4> 
+                        <img src="/assets/img/Perfil.jpg" alt="Foto-Perfil" class="userInfo__imgen"></img>
                     </div>
+                    <h2 class="userInfo__name">Mauricio Schefer</h2>
+                    <h4 class="userInfo--trabajo">Frotend Developer</h4> 
                 </div>
 
                 <!--Menu de Navegacion-->
@@ -102,12 +103,16 @@
                 <!--Pie de pagina-->
                 <footer class="userInfo__footer">
                     &copy; 2024 Mauricio Nicolas Schefer
-
                 </footer>
             </section>
 
         </aside>
-
+        <main class="layout__content">
+            <section class="content__pag">
+                <h1 class="pag__nombre">Mauricio Schefer</h1>
+                <h2 class="pag__trabajo">Frotend Developer</h2>
+            </section>
+        </main>
     </div>
 </body>
 </html>
