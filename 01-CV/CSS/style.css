@@ -20,6 +20,7 @@ body{
     font-size: 1.5rem;
     background-color: var(--color--fondo);
     color: var(--color--texto);
+        overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -171,8 +172,8 @@ body{
     flex-direction: column;
     justify-content:center ;
     align-items: center;
-    background-color: var(--color--principal);
     min-height: 100%;
+    background-color: var(--color--principal);
     border-radius: 3.2rem;
 }
 .pag__nombre{
@@ -244,3 +245,15 @@ body{
 }
 
 
+/*SobreMi*/
+.content__sobreMi{
+    display: block;
+    height: 100%;
+    min-height: 100%;
+    padding: 6rem;
+    padding-right: 3rem;
+    overflow: auto;
+
+
+
+}
