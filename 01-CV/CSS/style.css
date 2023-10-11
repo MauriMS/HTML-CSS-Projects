@@ -192,7 +192,7 @@ body{
     display: block;
     position: absolute;
     top: 0;
-    right: -125px;
+    right: -135px;
     min-width: 11rem;
     background-color: var(--color--transparente);
 
@@ -229,7 +229,7 @@ body{
 .menu__overlay{
     display: block;
     position: absolute;
-    right: 0;
+    right: 0px;
     margin-top: -3rem;
     padding: 0.5rem 1rem;
     opacity: 0;
@@ -238,8 +238,10 @@ body{
     white-space: nowrap;
     transition: all 300ms ease-in-out;
     border-radius: 1.5rem;
+    width: 7rem;
 }
 .menu__option:hover .menu__overlay{
+    width: 14rem;
     opacity: 1;
     right: 100%;
 }

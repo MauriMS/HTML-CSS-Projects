@@ -1,0 +1,38 @@
+:root{
+    --color--scrollbar:#D3D3D4;
+    --color--scrollbar-background:#eee;
+    --color--secundario:#04B4E0;
+}
+
+/*Scroll Firefox o Moz*/
+.content__pag{
+    scrollbar-width: thin;
+    scrollbar-color: var(--color--scrollbar) transparent;
+
+}
+
+
+
+
+/*Scroll Chrome*/
+.content__pag::-webkit-scrollbar{
+    width: 25px;
+    background: transparent;
+}
+.content__pag::-webkit-scrollbar-thumb{
+    border: 10px solid transparent;
+    box-shadow: none;
+    border-radius: 40px;
+}
+.content__pag:hover::-webkit-scrollbar-thumb{
+    box-shadow: inset 0 0 10px var(--color--scrollbar);
+}
+.content__pag:hover::-webkit-scrollbar-thumb:hover{
+    border: 8px solid transparent;
+    box-shadow: inset 0 0 0 10px var(--color--secundario);
+    transition: 200ms;
+
+}
+.content__pag::-webkit-scrollbar-track{
+    margin: 40px 0;
+}
