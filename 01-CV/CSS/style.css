@@ -20,7 +20,7 @@ body{
     font-size: 1.5rem;
     background-color: var(--color--fondo);
     color: var(--color--texto);
-        overflow: hidden;
+    overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -291,4 +291,58 @@ body{
     padding: 6rem;
     padding-right: 3rem;
     overflow: auto;
+}
+.sobreMi__header{
+    display: inline-block;
+    margin-bottom: 4.5rem;
+}
+.sobreMi__titulo{
+    font-size: 3.2rem;
+    position: relative;
+}
+.sobreMi__titulo-span{
+    color: var(--color--secundario);
+}
+.sobreMi__titulo::after{
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: -25px;
+    width: 50px;
+    height: 30px;
+    background-image: -webkit-repeating-radial-gradient(center center, var(--color--secundario), var(--color--secundario) 1px, transparent 0px, transparent 100% );
+    background-size: 6px 6px;
+    opacity: 0.25;
+}
+
+/* Informacion personal */
+.sobreMI__informacion{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+.informacion__biografia{
+    flex-basis: 60%;
+}
+.informacion__datos{
+    padding: 0 2.5rem;
+    flex-basis: 40%;
+}
+.informacion__descripcion{
+    font-size: 1.55rem;
+    line-height: 2.4rem;
+}
+.informacion__opcion{
+    margin-bottom: 1rem;
+    font-size: 1.55rem;
+}
+.informacion__titulo{
+    margin-right: 0.5rem;
+    color: var(--color--secundario);
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+.sobreMi__quehago{
+    width: 100%;
 }
