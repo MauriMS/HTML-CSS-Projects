@@ -8,6 +8,8 @@
     --color--texto:#555555;
     --color--fondo:#F2F7F9;
     --color--transparente: transparent;
+    --color-borde-referencias: #e5e6e7;
+    --color-compania:a5a6a7;
 }
 /*Estilos Generales*/
 html{
@@ -344,20 +346,24 @@ body{
     font-size: 1.8rem;
 }
 /* Servicios */
-.sobreMi__quehago{
+.sobreMi__quehago,
+.sobreMi__referencias{
     width: 100%;
     margin-bottom: 3rem;
 }
-.quehago__header{
+.quehago__header,
+.referencias__header{
     display: inline-block;
     padding-right: 1.2rem;
     position: relative;
 }
-.quehago__titulo{
+.quehago__titulo,
+.referencias__header-titulo{
     font-size: 2.6rem;
     margin-bottom: 1.8rem;
 }
-.quehago__titulo::after{
+.quehago__titulo::after,
+.referencias__header-titulo::after{
     content: "";
     position: absolute;
     top: 14px;
@@ -373,7 +379,7 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    margin-bottom: 10rem;
+    margin-bottom: 4rem;
 }
 .quehago__servicio{
     flex-basis: calc(50% - 5rem);
@@ -388,6 +394,7 @@ body{
 }
 .servicio__contenido{
     width: 100%;
+    text-align: justify;
 }
 .servicio__contenido-titulo{
     font-size: 2rem;
@@ -396,5 +403,60 @@ body{
 }
 .servicio__contenido-descripcion{
     font-size: 1.5rem;
+}
+
+/* Referencias */
+.referencias__header-titulo{
+    margin-bottom: 8rem;
+}
+.referencias__container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.referencias__referenciaDePersonas{
+    flex-basis: calc(50% - 3rem);
+    margin-right: 3rem;
+    border: 2px solid var(--color-borde-referencias);
+    border-radius: 2rem;
+    padding: 0 2.5rem 1.5rem 2.5rem;
+}
+.referenciasDePersonas__img{
+    width: 100%;
+}
+.referenciasDePersonas__imagen{
+    max-width: 10rem;
+    max-height: 10rem;
+    border-radius: 10rem;
+    margin: 0 auto;
+    margin-top: -4.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 10px -6px rgba(0, 0, 0 , 0.25);
+}
+.referenciaDePersonas__opinion{
+    font-size: 1.6rem;
+    line-height: 2.4rem;
     text-align: justify;
+    margin-bottom: 1rem;
+}
+.referenciasDePersonas__DatosDeReseña{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.DatosDeReseña__Nombre{
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+.DatosDeReseña__empresa{
+    color: var(--color-compania);
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+.DatosDeReseña__icon{
+    font-size: 4rem;
+    color: var(--color--secundario);
+    opacity: 0.5;
 }
