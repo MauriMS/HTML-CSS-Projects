@@ -239,7 +239,7 @@ body{
     width: 100%;
     text-align: center;
 }
-.menu__option:hover .menu__icon{
+.menu__option:hover .menu__icon, .menu__link--active .menu__icon{
     color: var(--color--secundario);
     font-size: 2.8rem;
     transition: all 300ms ease-in-out;
@@ -347,23 +347,35 @@ body{
 }
 /* Servicios */
 .sobreMi__quehago,
-.sobreMi__referencias{
+.sobreMi__referencias,
+.sobreMi__Clientes,
+.sobreMi__Precios,
+.sobreMi__informacionExtra{
     width: 100%;
     margin-bottom: 3rem;
 }
 .quehago__header,
-.referencias__header{
+.referencias__header,
+.Clientes__header,
+.Precios__header,
+.informacionExtra__header{
     display: inline-block;
     padding-right: 1.2rem;
     position: relative;
 }
 .quehago__titulo,
-.referencias__header-titulo{
+.referencias__header-titulo
+.Clientes__titulo,
+.Precios__header-titulo,
+.informacionExtra__header-titulo{
     font-size: 2.6rem;
     margin-bottom: 1.8rem;
 }
 .quehago__titulo::after,
-.referencias__header-titulo::after{
+.referencias__header-titulo::after,
+.Clientes__titulo::after,
+.Precios__header-titulo::after,
+.informacionExtra__header-titulo::after{
     content: "";
     position: absolute;
     top: 14px;
@@ -459,4 +471,147 @@ body{
     font-size: 4rem;
     color: var(--color--secundario);
     opacity: 0.5;
+}
+
+/* Clientes */
+.sobreMi__Clientes{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+.Clientes__header{
+    margin-bottom: 3rem;
+}
+.Clientes__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Cliente__img{
+    width: 145px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+.Clientes__link{
+    display: block;
+    width: 100%;
+    opacity: 0.7;
+}
+.Clientes__link:hover{
+    opacity: 1;
+    transition: all 300ms linear;
+}
+
+/* Precios */
+
+.Precios__container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5rem;
+}
+.Precios__container-box{
+    flex-basis: 50%;
+    margin-right: 3rem;
+    padding: 3rem;
+    border: 2px solid var(--color-borde-referencias);
+    border-radius: 1.5rem;
+    text-align: center;
+    transition: all 300ms ease-in-out;
+}
+.Precios__container-box:hover{
+    box-shadow: 0 18px 24px -5px rgba(0, 0, 0 , 0.15);
+    transform: translateY(-1.2rem);
+}
+.Precios__container-box:last-of-type{
+    margin-right: 0;
+}
+.Precios__container-box:hover .Precios__subtitulo-text::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    height: 2px;
+    background-color: var(--color--secundario);
+    transition: all 300ms ease-in-out;
+}
+.Precios__container-subtitulo{
+    margin-bottom: 3rem;
+}
+
+.Precios__subtitulo-text{
+    position: relative;
+    display: inline-block;
+    font-size: 2rem;
+}
+.Precios__container-precio{
+    padding-bottom: 1rem;
+}
+.Precios__numero{
+    display: block;
+    font-size: 4.2rem;
+    line-height: 1;
+    color: var(--color--titulo);
+}
+.Precios__avisos{
+    color: var(--color--texto);
+    display: block;
+}
+.Precios__container-comprar{
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+}
+.Precios__container-link{
+    display: inline-block;
+    border: 2px solid var(--color--subtitulo);
+    padding: 1.2rem 3.1rem;
+    box-shadow: 0 10px 10px -5px var(--color-borde-referencias);
+    border-radius: 3rem;
+    transition: all 300ms ease-in-out;
+}
+.Precios__container-link:hover{
+    background-color: var(--color--secundario);
+    color: var(--color--principal);
+    border: 2px solid var(--color--secundario);
+}
+.Precios__container-cursos{
+    font-size: 1.5rem;
+    padding: 0.6rem 0;
+}
+
+/* Informacion extra */
+.informacionExtra__container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.infromacionExtra__container-info{
+    flex-basis: 30%;
+    padding: 2.5rem 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    border: 2px solid var(--color-borde-referencias);
+    transition: all 300ms ease-in-out;
+}
+.infromacionExtra__container-info:hover{
+    box-shadow: 0 18px 24px -5px rgba(0, 0, 0 , 0.15);
+    transform: translateY(-0.5rem);
+}
+.informacionExtra__container-icon{
+    font-size: 3.3rem;
+    color: var(--color--secundario);
+    margin-bottom: 1rem;
+}
+.informacionExtra__container-titulo{
+    font-size: 1.5rem;
+    margin: 1.5rem;
+}
+.informacionExtra__container-span{
+    display: block;
+    font-size: 3.6rem;
+    line-height: 5rem;
+    margin: 1.5rem 1;
+    color: var(--color--subtitulo);
 }
