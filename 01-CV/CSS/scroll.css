@@ -22,7 +22,7 @@
 }
 .content__pag::-webkit-scrollbar-thumb{
     border: 10px solid transparent;
-    box-shadow: none;
+    box-shadow: inset 0 0 0 10px var(--color--scrollbar);
     border-radius: 40px;
 }
 .content__pag:hover::-webkit-scrollbar-thumb{

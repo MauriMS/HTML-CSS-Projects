@@ -320,7 +320,7 @@ body{
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin-bottom: 5rem;
+    margin-bottom: 8rem;
 }
 .informacion__biografia{
     flex-basis: 60%;
@@ -343,6 +343,58 @@ body{
     font-weight: 600;
     font-size: 1.8rem;
 }
+/* Servicios */
 .sobreMi__quehago{
     width: 100%;
+    margin-bottom: 3rem;
+}
+.quehago__header{
+    display: inline-block;
+    padding-right: 1.2rem;
+    position: relative;
+}
+.quehago__titulo{
+    font-size: 2.6rem;
+    margin-bottom: 1.8rem;
+}
+.quehago__titulo::after{
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: 0px;
+    width: 40px;
+    height: 25px;
+    background-image: -webkit-repeating-radial-gradient(center center, var(--color--secundario), var(--color--secundario) 1px, transparent 0px, transparent 100% );
+    background-size: 6px 6px;
+    opacity: 0.35;
+}
+.quehago__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 10rem;
+}
+.quehago__servicio{
+    flex-basis: calc(50% - 5rem);
+    margin-right: 5rem;
+    margin-bottom: 4rem;
+}
+.servicio__icon .fa-solid{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    font-size: 4rem;
+    color: var(--color--secundario);
+}
+.servicio__contenido{
+    width: 100%;
+}
+.servicio__contenido-titulo{
+    font-size: 2rem;
+    margin: 1.4rem 0;
+
+}
+.servicio__contenido-descripcion{
+    font-size: 1.5rem;
+    text-align: justify;
 }
