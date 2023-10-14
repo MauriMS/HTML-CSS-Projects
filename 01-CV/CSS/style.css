@@ -285,8 +285,9 @@ body{
 }
 
 
-/*SobreMi*/
-.content__sobreMi{
+/*Estilos generales SobreMi y Conocimientos*/
+.content__sobreMi,
+.content__Conocimientos{
     display: block;
     height: 100%;
     min-height: 100%;
@@ -294,18 +295,21 @@ body{
     padding-right: 3rem;
     overflow: auto;
 }
-.sobreMi__header{
+.sobreMi__header,
+.Conocimientos__header{
     display: inline-block;
     margin-bottom: 4.5rem;
 }
-.sobreMi__titulo{
+.sobreMi__titulo,
+.Conocimientos__titulo{
     font-size: 3.2rem;
     position: relative;
 }
 .sobreMi__titulo-span{
     color: var(--color--secundario);
 }
-.sobreMi__titulo::after{
+.sobreMi__titulo::after,
+.Conocimientos__titulo::after{
     content: "";
     position: absolute;
     top: 20px;
