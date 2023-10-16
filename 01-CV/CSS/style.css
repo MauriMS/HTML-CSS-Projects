@@ -672,8 +672,36 @@ body{
     font-size: 1.4rem;
     margin-bottom: 1rem;
 }
-
-
+.timeLine__divisor{
+    position: absolute;
+    top:0;
+    left: 30%;
+    bottom: -18px;
+    width: 1px;
+    background-color: var(--color--scrollbar);
+}
+.timeLine__divisor::before{
+    content: "";
+    position: absolute;
+    margin-top: 0.4rem;
+    margin-left: -0.8rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 10rem ;
+    background-color: var(--color--secundario);
+    opacity: 0.25;
+}
+.timeLine__divisor::after{
+    content: "";
+    position: absolute;
+    margin-top: 0.8rem;
+    margin-left: -0.4rem;
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 10rem ;
+    border: 2px solid var(--color--secundario);
+    background-color: var(--color--principal);
+}
 
 
 .Conocimientos__container-derecha{
