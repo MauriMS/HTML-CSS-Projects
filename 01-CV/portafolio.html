@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Portafolio Web</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/CSS/reset.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/CSS/scroll.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/CSS/style.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="/assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="/assets/fonts/poppins/poppins.css">
+</head>
+<body>
+    <!--Layout Principal-->
+    <div class="layout">
+        <!--Barra Lateral (Info del usuario)-->
+        <aside class="layout__aside">
+            <section class="aside__userInfo">
+
+                <!--Informacion general-->
+                <div class="userInfo__general">
+                    <div class="userInfo__containerImg">
+                        <img src="/assets/img/Perfil.jpg" alt="Foto-Perfil" class="userInfo__imagen"></img>
+                    </div>
+                    <h2 class="userInfo__nombre">Mauricio Schefer</h2>
+                    <h4 class="userInfo--trabajo">Frotend Developer</h4> 
+                </div>
+
+                <!--Menu de Navegacion-->
+                <nav class="layout__menu">
+                    <ul class="menu__list">
+                        <li class="menu__option">
+                            <a href="index.html" class="menu__link">
+                                <i class="fa-solid fa-home menu__icon" ></i>
+                                <span class="menu__overlay">Inicio</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="sobreMi.html" class="menu__link">
+                                <i class="fa-solid fa-user menu__icon" ></i>
+                                <span class="menu__overlay">Informacion</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="Conocimientos.html" class="menu__link ">
+                                <i class="fa-solid fa-graduation-cap menu__icon" ></i>
+                                <span class="menu__overlay">Conocimientos</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="portafolio.html" class="menu__link menu__link--active" >
+                                <i class="fa-solid fa-briefcase menu__icon" ></i>
+                                <span class="menu__overlay">Portafolio</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="blog.html" class="menu__link">
+                                <i class="fa-solid fa-book menu__icon" ></i>
+                                <span class="menu__overlay">Blog</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="contacto.html" class="menu__link">
+                                <i class="fa-solid fa-envelope menu__icon" ></i>
+                                <span class="menu__overlay">Contacto</span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+                <!--Redes Sociales-->
+                <div class="userInfo__userLink">
+                    <ul class="userLink__redes">
+                        <li class="redes__opcion">
+                            <a href="#" target="_blank">
+                                <i class="fa-brands fa-instagram redes__icon" ></i>
+                            </a>
+                        </li>
+                        <li class="redes__opcion">
+                            <a href="#" target="_blank redes__link">
+                                <i class="fa-brands fa-linkedin-in redes__icon" ></i>
+                            </a>
+                        </li>
+                        <li class="redes__opcion">
+                            <a href="#" target="_blank redes__link">
+                                <i class="fa-brands fa-github redes__icon" ></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Boton de curriculum-->
+                <div class="userInfo__boton">
+                    <a href="#" class="userInfo__botonCV">Decargar CV</a>
+                </div>
+                <!--Pie de pagina-->
+                <footer class="userInfo__footer">
+                    &copy; 2024 Mauricio Nicolas Schefer
+                </footer>
+            </section>
+
+        </aside>
+        <main class="layout__content">
+            <section class="content__pag content__portafolio">
+                <header class="portafolio__header">
+                    <h1 class="portafolio__titulo">Portafolio</h1>
+                </header>
+                <nav class="portafolio__nav">
+                    <ul class="portafolio__nav--list portafolio__nav--active">
+                        <li class="portafolio__nav--item">
+                            <a class="portafolio__nav--link" href="#">Todo</a>
+                        </li>
+                        <li class="portafolio__nav--item">
+                            <a class="portafolio__nav--link" href="#">Cursos</a>
+                        </li>
+                        <li class="portafolio__nav--item portafolio__nav--active">
+                            <a class="portafolio__nav--link" href="#">Web</a>
+                        </li>
+                        <li class="portafolio__nav--item portafolio__nav--active">
+                            <a class="portafolio__nav--link" href="#">Redes Sociales</a>
+                        </li>
+                        <li class="portafolio__nav--item portafolio__nav--active">
+                            <a class="portafolio__nav--link" href="#">Videos</a>
+                        </li>
+                        <li class="portafolio__nav--item portafolio__nav--active">
+                            <a class="portafolio__nav--link" href="#">Proyectos</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <section class="portafolio__gallery">
+
+                    <figure class="gallery__item">
+                        <div class="gallery__container-img">
+                            <a href="#" class="gallery__link">
+                                <img src="assets/img/galeria-1.jpg" alt="Galeria" class="gallery__img">
+                            </a>
+                        </div>
+                        <figcaption class="gallery__titulo">
+                            <!-- El titulo de cada contenedor -->
+                            Produccion de video
+                        </figcaption>
+                        <i class="gallery__icon fa-solid fa-video-camera"></i>
+                        <span class="gallery__category">Videos</span>
+                    </figure>
+
+                    <figure class="gallery__item">
+                        <div class="gallery__container-img">
+                            <a href="#" class="gallery__link">
+                                <img src="assets/img/galeria-2.jpg" alt="Galeria" class="gallery__img">
+                            </a>
+                        </div>
+                        <figcaption class="gallery__titulo">
+                            <!-- El titulo de cada contenedor -->
+                            Master en JavaScrip
+                        </figcaption>
+                        <i class="gallery__icon fa-solid fa-code"></i>
+                        <span class="gallery__category">Cursos</span>
+                    </figure>
+
+                    <figure class="gallery__item">
+                        <div class="gallery__container-img">
+                            <a href="#" class="gallery__link">
+                                <img src="assets/img/galeria-3.jpg" alt="Galeria" class="gallery__img">
+                            </a>
+                        </div>
+                        <figcaption class="gallery__titulo">
+                            <!-- El titulo de cada contenedor -->
+                            Máster en CSS
+                        </figcaption>
+                        <i class="gallery__icon fa-solid fa-code-branch"></i>
+                        <span class="gallery__category">Cursos</span>
+                    </figure>
+
+                    <figure class="gallery__item">
+                        <div class="gallery__container-img">
+                            <a href="#" class="gallery__link">
+                                <img src="assets/img/galeria-4.jpg" alt="Galeria" class="gallery__img">
+                            </a>
+                        </div>
+                        <figcaption class="gallery__titulo">
+                            <!-- El titulo de cada contenedor -->
+                            Red Social tipo Twitter
+                        </figcaption>
+                        <i class="gallery__icon fa-brands fa-twitter"></i>
+                        <span class="gallery__category">Web</span>
+                    </figure>
+
+                    <figure class="gallery__item">
+                        <div class="gallery__container-img">
+                            <a href="#" class="gallery__link">
+                                <img src="assets/img/galeria-5.jpg" alt="Galeria" class="gallery__img">
+                            </a>
+                        </div>
+                        <figcaption class="gallery__titulo">
+                            <!-- El titulo de cada contenedor -->
+                            Master en Lógica de Programacion
+                        </figcaption>
+                        <i class="gallery__icon fa-solid fa-code"></i>
+                        <span class="gallery__category">Curso</span>
+                    </figure>
+
+                    <figure class="gallery__item">
+                        <div class="gallery__container-img">
+                            <a href="#" class="gallery__link">
+                                <img src="assets/img/galeria-6.jpg" alt="Galeria" class="gallery__img">
+                            </a>
+                        </div>
+                        <figcaption class="gallery__titulo">
+                            <!-- El titulo de cada contenedor -->
+                            Galleria de imágenes
+                        </figcaption>
+                        <i class="gallery__icon fa-solid fa-image"></i>
+                        <span class="gallery__category">Proyectos</span>
+                    </figure>
+
+            
+                </section>
+
+
+            </section>
+        </main>
+    </div>
+</body>
+</html>
+
+
+
