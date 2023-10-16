@@ -98,7 +98,7 @@ body{
     border-radius: 30rem;
     background-image: -webkit-repeating-radial-gradient(center center, #fff, #fff 1px, transparent 0px, transparent 100%);
     background-size: 0.6rem 0.6rem;
-    opacity: 0.3;
+    opacity: 0.1;
 }
 
 .userInfo__nombre{
@@ -363,7 +363,9 @@ body{
 .Clientes__header,
 .Precios__header,
 .informacionExtra__header,
-.Container__izquierda-header{
+.Container__izquierda-header,
+.Container__derecha-header,
+.rensumenSertificados__subheader{
     display: inline-block;
     padding-right: 1.2rem;
     position: relative;
@@ -373,7 +375,9 @@ body{
 .Clientes__titulo,
 .Precios__header-titulo,
 .informacionExtra__header-titulo,
-.Container__izquierda-titulo{
+.Container__izquierda-titulo,
+.Container__derecha-titulo,
+.reusumenSertificado__subtitulo{
     font-size: 2.6rem;
     margin-bottom: 1.8rem;
 }
@@ -382,7 +386,9 @@ body{
 .Clientes__titulo::after,
 .Precios__header-titulo::after,
 .informacionExtra__header-titulo::after,
-.Container__izquierda-titulo::after{
+.Container__izquierda-titulo::after,
+.Container__derecha-titulo::after,
+.reusumenSertificado__subtitulo::after{
     content: "";
     position: absolute;
     top: 14px;
@@ -706,4 +712,105 @@ body{
 
 .Conocimientos__container-derecha{
     flex-basis: 41%;
+    padding: 0 1.5rem;
+}
+.Conocimientos__skills{
+    width: 100%;
+}
+.skills__titulo{
+    display: flex;
+    justify-content: space-between;
+}
+.skills__text{
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    margin-bottom: 0.8rem;
+}
+.skills__number{
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    margin-bottom: 0.4rem;
+    color: var(--color--subtitulo);
+}
+.Conocimientos__progressbar{
+    height: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--color--secundario);
+    border-radius: 1rem;
+    background-color: var(--color--principal);
+}
+.skills__porcentaje{
+    height: 0.8rem;
+    background-color: var(--color--secundario);
+    border: 2px solid var(--color--principal);
+    border-radius: 1rem;
+}
+.skills__porcentaje--p1,
+.skills__porcentaje--p4,
+.skills__porcentaje--p5,
+.skills__porcentaje--p8{
+    width: 90%;
+}
+.skills__porcentaje--p2,
+.skills__porcentaje--p6{
+    width: 75%;
+}
+.skills__porcentaje--p3,
+.skills__porcentaje--p7{
+    width: 80%;
+}
+.knowledges__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.knowledges__opcion{
+    margin: 0.3rem 0.4rem;
+    padding: 0.4rem 1rem;
+    font-size: 1.4rem;
+    background-color: var(--color--secundario);
+    border-radius: 0.3rem;
+    color: var(--color--principal);
+}
+.resumenSertificado__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.certificados_item{
+    display: flex;
+    flex-direction: row;
+    flex-basis: calc(50% - 1.5rem);
+    border: 1px  solid var(--color-borde-referencias);
+    border-radius: 0.8rem;
+}
+.cetificados__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 15rem;
+    padding: 2.5rem;
+    background-color: #f5f5f5;
+}
+.certificados__imagen{
+    width: 100%;
+}
+.centificados__contenido{
+    padding: 2rem 2.5rem;
+}
+.certificados__titulo{
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+.certificados__id{
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 1.3rem;
+    color: var(--color--subtitulo);
+}
+.certificados__dia{
+    font-size: 1.2rem;
+    color: var(--color--subtitulo);
 }
