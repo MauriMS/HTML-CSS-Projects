@@ -4,8 +4,8 @@ html{
 body{
     margin: 0;
     padding: 0;
-    background:linear-gradient(to bottom right, #0206f1 , #197cb9 , black);
-    height: 95rem;
+    background:linear-gradient(to left, rgb(29, 27, 27),black , rgba(216, 58, 58, 0.829),  rgba(216, 58, 58, 0.829),black ,  rgb(29, 27, 27) );
+    height: 93.5rem;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -34,9 +34,21 @@ body{
     opacity: 1;
     filter: contrast(120%);
 }
+@media(max-height:800px) {
+    body{
+        height: 80rem;
+        width: 100%;
+    }
+}
 @media(max-height:750px) {
     body{
         height: 75rem;
+        width: 100%;
+    }
+}
+@media(max-height:700px) {
+    body{
+        height: 70rem;
         width: 100%;
     }
 }
