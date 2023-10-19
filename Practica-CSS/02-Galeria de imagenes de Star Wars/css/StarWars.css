@@ -1,27 +1,48 @@
+html{
+    font-size: 10px;
+}
 body{
     margin: 0;
     padding: 0;
-}
-.container{
-    position: ;
-    margin: 0 auto;
+    background:linear-gradient(to bottom right, #0206f1 , #197cb9 , black);
+    height: 95rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
-section{
+
+.galeria{
     display: flex;
-    width: 600px;
-    height: 430px;
+    width: 800px;
+    height: 600px;
+    margin: 0,5rem;
+    border: 3px solid rgba(255, 255, 255, 0.589);
+    border-radius: 20px;
+    overflow: hidden;
 }
-section img{
+.galeria img{
     width: 0px;
     flex-grow: 1;
     object-fit: cover;
     opacity: 0.8;
     transition: .5s ease;
 }
-section img:hover{
+.galeria img:hover{
     cursor: crosshair;
     width: 150px;
     opacity: 1;
     filter: contrast(120%);
+}
+@media(max-height:750px) {
+    body{
+        height: 75rem;
+        width: 100%;
+    }
+}
+@media(max-height:650px) {
+    body{
+        height: 65rem;
+        width: 100%;
+    }
 }
