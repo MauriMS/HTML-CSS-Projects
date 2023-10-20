@@ -291,7 +291,8 @@ body{
 .content__sobreMi,
 .content__Conocimientos,
 .content__portafolio,
-.content__blog{
+.content__blog,
+.content__contact{
     display: block;
     height: 100%;
     min-height: 100%;
@@ -302,14 +303,16 @@ body{
 .sobreMi__header,
 .Conocimientos__header,
 .portafolio__header,
-.blog__header{
+.blog__header,
+.contact__header{
     display: inline-block;
     margin-bottom: 4.5rem;
 }
 .sobreMi__titulo,
 .Conocimientos__titulo,
 .portafolio__titulo,
-.blog__titulo{
+.blog__titulo,
+.contact__titulo{
     font-size: 3.2rem;
     position: relative;
 }
@@ -319,7 +322,8 @@ body{
 .sobreMi__titulo::after,
 .Conocimientos__titulo::after,
 .portafolio__titulo::after,
-.blog__titulo::after    {
+.blog__titulo::after,
+.contact__titulo::after{
     content: "";
     position: absolute;
     top: 20px;
