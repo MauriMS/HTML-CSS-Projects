@@ -1,118 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Joaquin</title>
-
-    <meta name="description" content="Portfolio de Joaquin Tealdi, estudiante y desarrollador .Net">
-
-    <meta name="robots" content="index, follow">
-    <link rel="icon" type="image/png" href="./img/favicon.png">
-
-    <style>
-        .enlace{
-            color: blue;
-        }
-        body{
-            background-color: rgb(143, 247, 215);
-        }
-        img{
-            width: 330px;
-            height: 350px;
-        }
-    </style>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Portafolio Web</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/CSS/reset.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/CSS/scroll.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/CSS/style.css'>
+    <link rel="shortcut icon" href="assets/img/Perfil.jp" type="image/x-icon">
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="/assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="/assets/fonts/poppins/poppins.css">
 </head>
 <body>
-    <header>
-        <h1>Portfolio de Joaquín Tealdi</h1>
-        <nav>
-            <a class="enlace" href="#experiencia">Experiencia</a>
-            <a class="enlace" href="#proyectos">Proyectos</a>
-            <a class="enlace" href="https://www.linkedin.com/in/joaqu%C3%ADn-tealdi/"
-                    target="_blank"
-                    rel="noreferrer">Linkedin</a>
-        </nav>
-    </header>
+    <!--Layout Principal-->
+    <div class="layout">
+        <!--Barra Lateral (Info del usuario)-->
+        <aside class="layout__aside">
+            <section class="aside__userInfo">
 
-    <main>
-        <p>Estudiante apasionado de desafíos, programación y tecnologías</p>
+                <!--Informacion general-->
+                <div class="userInfo__general">
+                    <div class="userInfo__containerImg">
+                        <img src="/assets/img/Perfil.jpg" alt="Foto-Perfil" class="userInfo__imagen"></img>
+                    </div>
+                    <h2 class="userInfo__nombre">Mauricio Schefer</h2>
+                    <h4 class="userInfo--trabajo">Frotend Developer</h4> 
+                </div>
 
-        <h2 id="experiencia">Experiencia</h2>
-        <ul>
-            <li>Upwork(Freelance) 2023 - Actualidad</li>
-            <li>Globant intership 2022 - 2023</li>
-        </ul>
+                <!--Menu de Navegacion-->
+                <nav class="layout__menu">
+                    <ul class="menu__list">
+                        <li class="menu__option">
+                            <a href="index.html" class="menu__link">
+                                <i class="fa-solid fa-home menu__icon" ></i>
+                                <span class="menu__overlay">Inicio</span>
+                            </a>
+                        </li>
 
-        <img title="foto de Joaquin" alt="una fotografia de Joaquin
-        mirando a la camara con el sol en la cara" src="./img/joaquin.jpg">
+                        <li class="menu__option">
+                            <a href="sobreMi.html" class="menu__link">
+                                <i class="fa-solid fa-user menu__icon" ></i>
+                                <span class="menu__overlay">Informacion</span>
+                            </a>
+                        </li>
 
-        <h2 id="proyectos">Proyectos realizados</h2>
+                        <li class="menu__option">
+                            <a href="Conocimientos.html" class="menu__link ">
+                                <i class="fa-solid fa-graduation-cap menu__icon" ></i>
+                                <span class="menu__overlay">Conocimientos</span>
+                            </a>
+                        </li>
 
-        <aside>
-            <header>
-                <h3>Tecnologías mas usadas</h3>
-            </header>
-            <ul>
-                <li>C#</li>
-                <li>.Net</li>
-                <li>Razor</li>
-                <li>SQL Server</li>
-            </ul>           
+                        <li class="menu__option">
+                            <a href="portafolio.html" class="menu__link " >
+                                <i class="fa-solid fa-briefcase menu__icon" ></i>
+                                <span class="menu__overlay">Portafolio</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="blog.html" class="menu__link menu__link--active">
+                                <i class="fa-solid fa-book menu__icon" ></i>
+                                <span class="menu__overlay">Blog</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="contacto.html" class="menu__link">
+                                <i class="fa-solid fa-envelope menu__icon" ></i>
+                                <span class="menu__overlay">Contacto</span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+                <!--Redes Sociales-->
+                <div class="userInfo__userLink">
+                    <ul class="userLink__redes">
+                        <li class="redes__opcion">
+                            <a href="#" target="_blank">
+                                <i class="fa-brands fa-instagram redes__icon" ></i>
+                            </a>
+                        </li>
+                        <li class="redes__opcion">
+                            <a href="#" target="_blank redes__link">
+                                <i class="fa-brands fa-linkedin-in redes__icon" ></i>
+                            </a>
+                        </li>
+                        <li class="redes__opcion">
+                            <a href="#" target="_blank redes__link">
+                                <i class="fa-brands fa-github redes__icon" ></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Boton de curriculum-->
+                <div class="userInfo__boton">
+                    <a href="#" class="userInfo__botonCV">Decargar CV</a>
+                </div>
+                <!--Pie de pagina-->
+                <footer class="userInfo__footer">
+                    &copy; 2024 Mauricio Nicolas Schefer
+                </footer>
+            </section>
+
         </aside>
-
-        <section>
-            <article>
-                <header>
-                     <h4>Sistema de mensajería</h4>
+        <main class="layout__content">
+            <section class="content__pag content__contact">
+                <header class="contact__header">
+                    <h1 class="contact__titulo">Contacto</h1>
                 </header>
-                
-                <p>
-                    Es un proyecto de la facultad realizado en equipo, simulando un sistema de mensajería vía mail, con un sistema de Login
-                </p>
 
-                <footer>
-                    <small>Tecnologías usadas: C#, .Net, SQL Server, ASP.Net, Razor</small>
-                </footer>
-            </article>
-
-            <article>
-                <header>
-                    <h4>Sistema de gestion de empleados</h4>
-                </header>
-                
-                <p>
-                    Es un sistema de gestión y administración de empleados, se puede realizar un CRUD de los mismos administrando datos personales como de contratos
-                </p>
-
-                <footer>
-                    <small>Tecnologías usadas: C#, .Net, SQL Server, ASP.Net, Angular</small>
-                </footer>
-            </article>
-
-            <article>
-                <header>
-                    <h4>Mini juego de consola</h4>
-                </header>
-                
-                <p>
-                    Es un proyecto que consola del famoso juego "piedra, papel o tijeras"
-                </p>
-
-                <footer>
-                    <small>Tecnologías usadas: C#, .Net</small>
-                </footer>
-            </article>
-
-        </section>
-         
-    </main>
-
-    <footer>
-        Copyright &copy 2023
-        <a class="enlace" href="mailto:joaquintealdi25@gmail.com">contáctame via mail</a>
-    </footer>
-
-    
+            </section>
+        </main>
+    </div>
 </body>
 </html>
+
+
+
