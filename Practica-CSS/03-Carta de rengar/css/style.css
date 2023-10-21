@@ -16,37 +16,80 @@ body{
     justify-content: center;
     width: 40rem;
     height: 60rem;
-    background-color: burlywood;
+    background: linear-gradient(to bottom, rgb(39, 38, 38) ,rgb(0, 0, 0), 
+    rgb(39, 38, 38), black);
     border-radius: 3rem;
     overflow: hidden;
+    border: 4px solid rgba(128, 128, 128, 0.5) ;
+    transition: all 300ms ease-in-out;
 }
 .container-img{
-    background-color: aquamarine;
     width: 100%;
     height: 100%;
     overflow: hidden;
-    border-bottom: 5px solid rgba(128, 128, 128, 0.822);
+    border-bottom: 5px solid rgba(128, 128, 128, 0.5);
 }
 .container-img img{
     position: relative;
     background-color: aquamarine;
-    left: -25rem;
+    left: -23rem;
     height: 100%;
-
+    transition: all 300ms ease-in-out;
 }
 .descripcion{
     width: 100%;
     height: 15rem;
-    background-color: bisque;
     text-align: center;
+    color: rgba(160, 63, 63, 0.87);
 }
 .titulo{
     font-size: 4rem;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 1.5rem;
     margin-bottom: 0;
+    text-shadow: 0px 0px 2px rgb(255, 0, 0);
 
 }
 .subtitulo{
     font-size: 1.5rem;
+    text-shadow: 0px 0px 1px rgb(255, 0, 0);
+    margin: 1rem;
+}
+.iconos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem;
+}
+.container-icons{
+    text-align: center;
+    width: 5rem;
+    height: 7rem;
+    margin: 0 3rem;
+}
+.rol__primario{
+    width: 4rem;
+    height: 4rem;
+}
+.rol__secundario{
+    width: 10rem;
+    height: 10rem;
+}
+.clase{
+    width: 5rem;
+    height: 5rem;
+}
+.container-icons span{
+    display: block;
+    color: rgba(160, 63, 63, 0.87);
+    text-shadow: 0px 0px 1px rgb(255, 0, 0);
+    font-size: 1.2rem;
+}
+.container:hover{
+    transform: scale(1.1);
+    transition: all 300ms ease-in-out;
+}
+.container:hover .container-img img{
+    transform: scale(1.1);
+    transition: all 300ms ease-in-out;
 }
