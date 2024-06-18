@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital@0;1&display=swap');
 body{
     background-color: #EDF7FF;
-
 }
 header {
     padding-left: 20%;
@@ -25,7 +24,7 @@ main section{
     margin: 4.5% 20%;
 }
 main section p{
-    font-size: 48px;
+    font-size: 36px;
     font-family: 'Asap', sans-serif;
     font-weight: regular;
     color: #04146c;
